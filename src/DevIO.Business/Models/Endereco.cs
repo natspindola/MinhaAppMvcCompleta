@@ -38,5 +38,6 @@ namespace AppMvcBasica.Models
 
         /* EF Relations */
         public IEnumerable<Produto> Produtos { get; set; }
+        public Fornecedor Fornecedor { get; set; }
     }
 }
