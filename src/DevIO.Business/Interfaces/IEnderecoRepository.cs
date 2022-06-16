@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevIO.Business.Interfaces
 {
-    interface IEnderecoRepository : IRepository<Endereco>
+    public interface IEnderecoRepository : IRepository<Endereco>
     {
         Task<Endereco> ObterEnderecoPorFornecedor(Guid fornecedorId);
     }
