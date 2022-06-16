@@ -1,0 +1,9 @@
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.deps.json
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.dll
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.csprojAssemblyReference.cache
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.csproj.CoreCompileInputs.cache
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfoInputs.cache
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfo.cs
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.dll
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.pdb
