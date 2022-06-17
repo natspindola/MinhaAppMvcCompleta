@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DevIO.Data.Repository
 {
-    class ProdutoRepository : Repository<Produto>, IProdutoRepository
+    public class ProdutoRepository : Repository<Produto>, IProdutoRepository
     {
         public ProdutoRepository(MeuDbContext context) : base(context) { }
 
