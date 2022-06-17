@@ -10,7 +10,6 @@ C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\bin\Debug\netcoreapp2.2\De
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\bin\Debug\netcoreapp2.2\DevIO.Data.pdb
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.csprojAssemblyReference.cache
-C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.csproj.CoreCompileInputs.cache
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.RazorAssemblyInfo.cache
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.RazorAssemblyInfo.cs
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.AssemblyInfoInputs.cache
