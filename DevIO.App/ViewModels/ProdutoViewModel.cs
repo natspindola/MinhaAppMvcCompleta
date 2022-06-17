@@ -1,15 +1,17 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AppMvcBasica.Models
+namespace DevIO.App.ViewModels
 {
-    public class Produto : Entity
+    public class ProdutoViewModel
     {
-        public Guid FornecedorId { get; set; }
+        [Key]
+        public Guid Id { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(200, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres ", MinimumLength = 2)]
@@ -24,15 +26,18 @@ namespace AppMvcBasica.Models
         [StringLength(200, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres ", MinimumLength = 2)]
         public string Imagem { get; set; }
 
+        public IFormFile ImagemUpload { get; set; }
+
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public string Valor { get; set; }
 
         [ScaffoldColumn(false)]
         public DateTime DataCadastro { get; set; }
 
+        [DisplayName("Ativo?")]
         public string Ativo { get; set; }
 
         /* EF Relation */
-        public Fornecedor Fornecedor { get; set; }
+        public FornecedorViewModel Fornecedor { get; set; }
     }
 }
