@@ -33,3 +33,4 @@ C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\De
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.csproj.CopyComplete
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.dll
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.pdb
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.csproj.CoreCompileInputs.cache
