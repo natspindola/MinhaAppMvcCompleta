@@ -34,3 +34,8 @@ C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\De
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.dll
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.pdb
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\DevIO.App.csproj.CoreCompileInputs.cache
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Fornecedores\Create.g.cshtml.cs
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Fornecedores\Delete.g.cshtml.cs
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Fornecedores\Details.g.cshtml.cs
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Fornecedores\Edit.g.cshtml.cs
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Fornecedores\Index.g.cshtml.cs
