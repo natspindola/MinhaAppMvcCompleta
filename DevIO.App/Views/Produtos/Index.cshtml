@@ -20,7 +20,7 @@
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FornedecedorId)
+                @Html.DisplayNameFor(model => model.FornecedorId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Valor)
@@ -35,13 +35,13 @@
 @foreach (var item in Model) {
         <tr>
             <th>
-
+                <img src="~/imagens/@item.Imagem" alt="@item.Imagem" style="width: 70px; height: 100px" />
             </th>
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FornedecedorId)
+                @Html.DisplayFor(modelItem => item.FornecedorId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Valor)
