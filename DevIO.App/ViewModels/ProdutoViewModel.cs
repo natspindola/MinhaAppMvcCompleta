@@ -35,7 +35,7 @@ namespace DevIO.App.ViewModels
         [DisplayName("Imagem do Produto")]
         public IFormFile ImagemUpload { get; set; }
 
-        [Moeda()]
+        [Moeda]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal Valor { get; set; }
 
@@ -43,7 +43,7 @@ namespace DevIO.App.ViewModels
         public DateTime DataCadastro { get; set; }
 
         [DisplayName("Ativo?")]
-        public string Ativo { get; set; }
+        public bool Ativo { get; set; }
 
         /* EF Relation */
         public FornecedorViewModel Fornecedor { get; set; }
