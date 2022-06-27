@@ -1,16 +1,15 @@
 ﻿@model DevIO.App.ViewModels.FornecedorViewModel
 
 @{
-    ViewData["Title"] = "Novo fornecedor";
+    ViewData["Title"] = "Novo Fornecedor";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h3 style="padding-top: 30px">@ViewData["Title"]</h3>
 
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-
+    <div class="col-md-5">
+        <form enctype="multipart/form-data" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
@@ -35,7 +34,7 @@
 
             <h4>Endereço</h4>
             <hr />
-            <partial name="_Endereco"/>
+            <partial name="_Endereco" />
 
             <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-primary" />
