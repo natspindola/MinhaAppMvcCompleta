@@ -28,15 +28,15 @@
         <div class="form-group col-md-6">
             <label asp-for="TipoFornecedor"></label>
             <div>
-                <input type="radio" value="1" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 1)" />
-                <input type="radio" value="2" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 2)" />
+                <input type="radio" value="1" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 1)" /> Pessoa Física
+                <input type="radio" value="2" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 2)" /> Pessoa Jurídica
             </div>
             <div>
                 &nbsp;
             </div>
             <div class="form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(expression: model => model.Ativo);
+                    <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(expression: model => model.Ativo)
                 </label>
             </div>
         </div>
@@ -47,6 +47,9 @@
     </div>
 </form>
 
+<div>
+    <partial name="_DetalhesEndereco"/>
+</div>
 
 
 @section Scripts {
