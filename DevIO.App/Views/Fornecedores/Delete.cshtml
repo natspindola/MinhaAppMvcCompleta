@@ -8,8 +8,8 @@
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    <h4>Você tem certeza que quer excluir esse fornecedor?</h4>
-    <h4>Essa ação será permanente!</h4>
+    <h5>Você tem certeza disso?</h5>
+    <h5>Essa ação será permanente!</h5>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -34,7 +34,7 @@
 
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <input type="submit" value="Excluir" class="btn btn-danger" />
         <a class="btn btn-info" asp-action="Index">Voltar</a>
     </form>
 </div>
