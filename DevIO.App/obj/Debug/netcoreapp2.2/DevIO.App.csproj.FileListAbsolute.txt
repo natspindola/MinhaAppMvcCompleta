@@ -46,4 +46,4 @@ C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Ra
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\Index.g.cshtml.cs
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Fornecedores\_Endereco.g.cshtml.cs
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Fornecedores\_DetalhesEndereco.g.cshtml.cs
-C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\ListaProdutos.g.cshtml.cs
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\_ListaProdutos.g.cshtml.cs
