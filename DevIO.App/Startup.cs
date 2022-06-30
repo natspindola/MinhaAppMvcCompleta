@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DevIO.App.Configurations;
 using DevIO.App.Data;
 using DevIO.App.Extensions;
 using DevIO.Business.Interfaces;
@@ -71,11 +72,7 @@ namespace DevIO.App
             })
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddScoped<MeuDbContext>();
-            services.AddScoped<IProdutoRepository, ProdutoRepository>();
-            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
-            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
-            services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>();
+            services.ResolveDependencies();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
