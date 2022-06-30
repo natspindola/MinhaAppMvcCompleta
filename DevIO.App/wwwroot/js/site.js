@@ -50,7 +50,7 @@ function BuscaCep() {
         }
 
         //quando o campo cep perde o foco
-        $("#Endereco_Cep").blur(function () {
+        $("#Endereco_Cep").change(function () {
 
             //nova variável cep somente com dígitos
             var cep = $(this).val().replace(/\D/g, '');
@@ -80,14 +80,13 @@ function BuscaCep() {
                         else {
                             //cep pesquisado não encontrado
                             limpa_formulario_cep();
-                            alert("CEP não encontrado.")
                         }
                     });
                 }
                 else {
                     //cep inválido
                     limpa_formulario_cep();
-                    alert("Formato de CEP inválido.")
+                    alert("Formato de CEP inválido.");
                 }
             }
             else {
