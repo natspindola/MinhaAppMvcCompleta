@@ -134,9 +134,12 @@ namespace DevIO.App.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AtualizarEndereco(FornecedorViewModel fornecedorViewModel)
         {
+            ModelState.Remove(key: "Nome");
+            ModelState.Remove(key: "Documento");
+
             if (!ModelState.IsValid) return PartialView(viewName: "_AtualizarEndereco", fornecedorViewModel);
 
-            await _enderecoRepository.Adicionar(_mapper.Map<Endereco>(fornecedorViewModel.Endereco));
+            await _enderecoRepository.Atualizar(_mapper.Map<Endereco>(fornecedorViewModel.Endereco));
 
             var url = Url.Action("ObterEndereco", controller: "Fornecedores", values: new { id = fornecedorViewModel.Endereco.FornecedorId });
             return Json(data: new { success = true, url });
