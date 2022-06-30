@@ -8,11 +8,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace DevIO.App.Configurations
 {
@@ -72,6 +75,23 @@ namespace DevIO.App.Configurations
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             return services;
+        }
+    }
+
+    public static class GlobalizationConfig
+    {
+        public static IApplicationBuilder UseGlobalizationConfig(this IApplicationBuilder app)
+        {
+            var defaultCulture = new CultureInfo(name: "pt-BR");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(defaultCulture),
+                SupportedCultures = new List<CultureInfo> { defaultCulture },
+                SupportedUICultures = new List<CultureInfo> { defaultCulture }
+            };
+            app.UseRequestLocalization(localizationOptions);
+
+            return app;
         }
     }
 }

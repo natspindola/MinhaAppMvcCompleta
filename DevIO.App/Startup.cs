@@ -70,14 +70,7 @@ namespace DevIO.App
 
             app.UseAuthentication();
 
-            var defaultCulture = new CultureInfo(name: "pt-BR");
-            var localizationOptions = new RequestLocalizationOptions
-            {
-                DefaultRequestCulture = new RequestCulture(defaultCulture),
-                SupportedCultures = new List<CultureInfo> { defaultCulture },
-                SupportedUICultures = new List<CultureInfo> { defaultCulture }
-            };
-            app.UseRequestLocalization(localizationOptions);
+            app.UseGlobalizationConfig();
 
             app.UseMvc(routes =>
             {
