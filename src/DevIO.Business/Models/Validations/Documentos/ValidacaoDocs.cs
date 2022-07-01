@@ -160,4 +160,20 @@ namespace DevIO.Business.Models.Validations.Documentos
             return _substituicoes.ContainsKey(resultado) ? _substituicoes[resultado] : resultado.ToString();
         }
     }
+
+    public class Utils
+    {
+        public static string ApenasNumeros(string valor)
+        {
+            var onlyNumber = "";
+            foreach (var s in valor)
+            {
+                if (char.IsDigit(s))
+                {
+                    onlyNumber += s;
+                }
+            }
+            return onlyNumber.Trim();
+        }
+    }
 }
