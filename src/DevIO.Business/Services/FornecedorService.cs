@@ -10,7 +10,7 @@ namespace DevIO.Business.Services
     {
         public Task Adicionar(Fornecedor fornecedor)
         {
-            throw new NotImplementedException();
+            
         }
 
         public Task Atualizar(Fornecedor fornecedor)
