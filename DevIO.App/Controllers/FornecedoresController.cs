@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using DevIO.App.ViewModels;
 using DevIO.Business.Interfaces;
 using AutoMapper;
-using AppMvcBasica.Models;
+using DevIO.Business.Models;
 
 namespace DevIO.App.Controllers
 {

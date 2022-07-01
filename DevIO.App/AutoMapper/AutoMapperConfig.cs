@@ -1,6 +1,7 @@
 ﻿using AppMvcBasica.Models;
 using AutoMapper;
 using DevIO.App.ViewModels;
+using DevIO.Business.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DevIO.Business.Models;
+using System;
+using System.Threading.Tasks;
 
 namespace DevIO.Business.Interfaces
 {
-    interface IFornecedorService
+    public interface IFornecedorService
     {
+        Task Adicionar(Fornecedor fornecedor);
+        Task Atualizar(Fornecedor fornecedor);
+        Task Remover(Guid id);
+
+        Task AtualizarEndereo(Endereco endereco);
     }
 }
