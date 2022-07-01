@@ -1,5 +1,4 @@
-﻿using AppMvcBasica.Models;
-using AutoMapper;
+﻿using AutoMapper;
 using DevIO.App.ViewModels;
 using DevIO.Business.Models;
 using System;
