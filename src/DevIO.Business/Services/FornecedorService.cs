@@ -8,15 +8,11 @@ namespace DevIO.Business.Services
 {
     public class FornecedorService : BaseService, IFornecedorService
     {
-        public Task Adicionar(Fornecedor fornecedor)
+        public async Task Adicionar(Fornecedor fornecedor)
         {
-            var validator = new FornecedorValidation();
-            var result = validator.Validate(fornecedor);
+            if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)) return;
 
-            if (!result.IsValid)
-            {
-                //result.Errors;
-            }
+            return;
         }
 
         public Task Atualizar(Fornecedor fornecedor)
