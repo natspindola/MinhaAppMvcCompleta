@@ -6,3 +6,4 @@ C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcore
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfo.cs
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.dll
 C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.pdb
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.csproj.CoreCompileInputs.cache
