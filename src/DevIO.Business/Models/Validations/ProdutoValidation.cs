@@ -15,7 +15,7 @@ namespace DevIO.Business.Models.Validations
                 .Length(min: 2, max: 1000).WithMessage("O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caractéres.");
 
             RuleFor(expression: c => c.Valor)
-                .GreaterThan(valueToCompare:0).WithMessage("O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caractéres.");
+                .GreaterThan(valueToCompare:0).WithMessage("O campo {PropertyName} precisa ser maior que {ComparisonValue}");
         }
     }
 }
