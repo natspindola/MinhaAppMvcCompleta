@@ -43,7 +43,7 @@ namespace DevIO.Business.Models.Validations.Documentos
             var number = valor.Substring(startIndex: 0, length: TamanhoCpf - 2);
             var digitoVerificador = new DigitoVerificador(number)
                 .ComMultiplicadoresAte(primeiroMultiplicador: 2, ultimoMultiplicador: 11)
-                .Substituindo(substituto: "0", paramsdigitos: 10, 11);
+                .Substituindo(substituto: "0", 10, 11);
             var firstDigit = digitoVerificador.CalculaDigito();
             digitoVerificador.AddDigito(firstDigit);
             var secondDigit = digitoVerificador.CalculaDigito();
@@ -93,7 +93,7 @@ namespace DevIO.Business.Models.Validations.Documentos
             var number = valor.Substring(startIndex: 0, length: TamanhoCnpj - 2);
             var digitoVerificador = new DigitoVerificador(number)
                 .ComMultiplicadoresAte(primeiroMultiplicador: 2, ultimoMultiplicador: 14)
-                .Substituindo(substituto: "0", paramsdigitos: 13, 14);
+                .Substituindo(substituto: "0", 13, 14);
             var firstDigit = digitoVerificador.CalculaDigito();
             digitoVerificador.AddDigito(firstDigit);
             var secondDigit = digitoVerificador.CalculaDigito();
