@@ -10,6 +10,6 @@ namespace DevIO.Business.Interfaces
         Task Atualizar(Fornecedor fornecedor);
         Task Remover(Guid id);
 
-        Task AtualizarEndereo(Endereco endereco);
+        Task AtualizarEndereco(Endereco endereco);
     }
 }
