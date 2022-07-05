@@ -47,7 +47,7 @@ namespace DevIO.Business.Services
             await _fornecedorRepository.Adicionar(fornecedor);
         }
 
-        public async Task AtualizarEndereo(Endereco endereco)
+        public async Task AtualizarEndereco(Endereco endereco)
         {
             if (!ExecutarValidacao(new EnderecoValidation(), endereco)) return;
 
