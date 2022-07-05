@@ -15,16 +15,20 @@ namespace DevIO.App.Controllers
     {
         private readonly IProdutoRepository _produtoRepository;
         private readonly IFornecedorRepository _fornecedorRepository;
+        private readonly IProdutoService _produtoService;
         private readonly IMapper _mapper;
 
         public ProdutosController(IProdutoRepository produtoRepository,
                                   IFornecedorRepository fornecedorRepository,
-                                  IMapper mapper)
+                                  IMapper mapper,
+                                  IProdutoService produtoService)
         {
             _produtoRepository = produtoRepository;
             _fornecedorRepository = fornecedorRepository;
             _mapper = mapper;
+            _produtoService = produtoService;
         }
+
         [Route("lista-de-produtos")]
         public async Task<IActionResult> Index()
         {
@@ -66,7 +70,7 @@ namespace DevIO.App.Controllers
             }
 
             produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
-            await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
+            await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
 
             return RedirectToAction(actionName: "Index");
         }
@@ -111,7 +115,7 @@ namespace DevIO.App.Controllers
             produtoAtualizacao.Valor = produtoViewModel.Valor;
             produtoAtualizacao.Ativo = produtoViewModel.Ativo;
 
-            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoAtualizacao));
+            await _produtoService.Atualizar(_mapper.Map<Produto>(produtoAtualizacao));
             return RedirectToAction(actionName:"Index");
         }
 
@@ -140,7 +144,7 @@ namespace DevIO.App.Controllers
                 return NotFound();
             }
 
-            await _produtoRepository.Remover(id);
+            await _produtoService.Remover(id);
             return RedirectToAction(actionName:"Index");
         }
 
