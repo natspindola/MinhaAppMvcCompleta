@@ -2,6 +2,7 @@
 using DevIO.Business.Models;
 using DevIO.Business.Models.Validations;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace DevIO.Business.Services
@@ -22,21 +23,45 @@ namespace DevIO.Business.Services
         {
             if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)
                 && !ExecutarValidacao(new EnderecoValidation(), fornecedor.Endereco)) return;
+
+            if(_fornecedorRepository.Buscar(f => f.Documento == fornecedor.Documento).Result.Any())
+            {
+                Notificar(mensagem: "Já existe um fornecedor com este documento informado.");
+                return;
+            }
+
+            await _fornecedorRepository.Adicionar(fornecedor);
         }
 
         public async Task Atualizar(Fornecedor fornecedor)
         {
             if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)) return;
+
+            if (_fornecedorRepository.Buscar(f => f.Documento == fornecedor.Documento && f.Id != fornecedor.Id).Result.Any())
+            {
+                Notificar(mensagem: "Já existe um fornecedor com este documento informado.");
+                return;
+            }
+
+            await _fornecedorRepository.Adicionar(fornecedor);
         }
 
         public async Task AtualizarEndereo(Endereco endereco)
         {
             if (!ExecutarValidacao(new EnderecoValidation(), endereco)) return;
+
+            await _enderecoRepository.Atualizar(endereco);
         }
 
         public async Task Remover(Guid id)
         {
-            throw new NotImplementedException();
+            if (_fornecedorRepository.ObterFornecedorProdutosEndereco(id).Result.Produtos.Any())
+            {
+                Notificar(mensagem: "O fornecedor possui produtos cadastrados.");
+                return;
+            }
+
+            await _fornecedorRepository.Remover(id);
         }
     }
 }
