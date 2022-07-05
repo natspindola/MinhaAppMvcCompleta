@@ -8,6 +8,16 @@ namespace DevIO.Business.Services
 {
     public class FornecedorService : BaseService, IFornecedorService
     {
+        private readonly IFornecedorRepository _fornecedorRepository;
+        private readonly IEnderecoRepository _enderecoRepository;
+
+        public FornecedorService(IFornecedorRepository fornecedorRepository,
+                                 IEnderecoRepository enderecoRepository)
+        {
+            _fornecedorRepository = fornecedorRepository;
+            _enderecoRepository = enderecoRepository;
+        }
+
         public async Task Adicionar(Fornecedor fornecedor)
         {
             if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)
