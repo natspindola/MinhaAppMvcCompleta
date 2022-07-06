@@ -73,6 +73,8 @@ namespace DevIO.App.Controllers
             produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
             await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
 
+            if (!OperacaoValida()) return View(produtoViewModel);
+
             return RedirectToAction(actionName: "Index");
         }
 
@@ -117,6 +119,9 @@ namespace DevIO.App.Controllers
             produtoAtualizacao.Ativo = produtoViewModel.Ativo;
 
             await _produtoService.Atualizar(_mapper.Map<Produto>(produtoAtualizacao));
+
+            if (!OperacaoValida()) return View(produtoViewModel);
+
             return RedirectToAction(actionName:"Index");
         }
 
@@ -146,6 +151,9 @@ namespace DevIO.App.Controllers
             }
 
             await _produtoService.Remover(id);
+
+            if (!OperacaoValida()) return View(produto);
+
             return RedirectToAction(actionName:"Index");
         }
 
