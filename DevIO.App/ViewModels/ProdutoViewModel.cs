@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -33,6 +34,7 @@ namespace DevIO.App.ViewModels
         public string Imagem { get; set; }
 
         [DisplayName("Imagem do Produto")]
+        [NotMapped]
         public IFormFile ImagemUpload { get; set; }
 
         [Moeda]
@@ -48,6 +50,6 @@ namespace DevIO.App.ViewModels
         /* EF Relation */
         public FornecedorViewModel Fornecedor { get; set; }
 
-        public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
+        //public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
     }
 }
