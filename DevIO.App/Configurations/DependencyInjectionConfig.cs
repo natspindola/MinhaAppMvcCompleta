@@ -15,7 +15,7 @@ namespace DevIO.App.Configurations
         {
             services.AddScoped<MeuDbContext>();
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
-            _ = services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
             services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>();
 
