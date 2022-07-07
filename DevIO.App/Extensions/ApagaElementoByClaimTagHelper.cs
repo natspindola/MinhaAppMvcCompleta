@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Razor.TagHelpers;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
 
 namespace DevIO.App.Extensions
@@ -7,6 +8,13 @@ namespace DevIO.App.Extensions
     [HtmlTargetElement("*", Attributes = "supress-by-claim-value")]
     public class ApagaElementoByClaimTagHelper : TagHelper
     {
+        private readonly IHttpContextAccessor _contextAccessor;
+
+        public ApagaElementoByClaimTagHelper(IHttpContextAccessor contextAccessor)
+        {
+            _contextAccessor = contextAccessor;
+        }
+
         [HtmlAttributeName("supress-by-claim-name")]
 
         public string IdentityClaimName { get; set; }
@@ -22,7 +30,7 @@ namespace DevIO.App.Extensions
             if (output == null)
                 throw new ArgumentNullException(paramName: nameof(output));
 
-            var temAcesso = CustomAuthorization.ValidarClaimsUsuario(context: null, IdentityClaimName, IdentityClaimValue);
+            var temAcesso = CustomAuthorization.ValidarClaimsUsuario(_contextAccessor.HttpContext, IdentityClaimName, IdentityClaimValue);
 
             if (temAcesso) return;
 
