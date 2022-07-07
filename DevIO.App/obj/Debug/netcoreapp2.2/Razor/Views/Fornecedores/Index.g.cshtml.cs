@@ -19,7 +19,7 @@ using DevIO.App;
 #line default
 #line hidden
 #line 2 "C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\Views\_ViewImports.cshtml"
-using DevIO.App.Models;
+using DevIO.App.ViewModels;
 
 #line default
 #line hidden
@@ -29,7 +29,7 @@ using DevIO.App.Extensions;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4d071bb32beb49dba05eecec538fd68561f6c7d0", @"/Views/Fornecedores/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9b1c4f7112a188c6823fcdfc8cbeb3cfe4ebb5b7", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bb39f9860e515af571e7ece4ad1b1307c76ba95b", @"/Views/_ViewImports.cshtml")]
     public class Views_Fornecedores_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<DevIO.App.ViewModels.FornecedorViewModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-info"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -90,7 +90,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h1>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(192, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d07848", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d07852", async() => {
                 BeginContext(236, 15, true);
                 WriteLiteral("Novo Fornecedor");
                 EndContext();
@@ -181,7 +181,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n            </td>\r\n            <td class=\"text-right\">\r\n                ");
             EndContext();
             BeginContext(1108, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d012371", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d012375", async() => {
                 BeginContext(1177, 34, true);
                 WriteLiteral("<spam class=\"fa fa-search\"></spam>");
                 EndContext();
@@ -217,7 +217,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1233, 178, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d014862", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d014866", async() => {
                 BeginContext(1369, 38, true);
                 WriteLiteral("<spam class=\"fa fa-pencil-alt\"></spam>");
                 EndContext();
@@ -259,7 +259,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1429, 175, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d018101", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d071bb32beb49dba05eecec538fd68561f6c7d018105", async() => {
                 BeginContext(1567, 33, true);
                 WriteLiteral("<spam class=\"fa fa-trash\"></spam>");
                 EndContext();

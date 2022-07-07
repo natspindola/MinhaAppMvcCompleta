@@ -1,10 +1,5 @@
-﻿using DevIO.App.Models;
+﻿using DevIO.App.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DevIO.App.Controllers
 {
@@ -31,7 +26,7 @@ namespace DevIO.App.Controllers
                 modelErro.Titulo = "Ocorreu um erro!";
                 modelErro.ErroCode = id;
             }
-            else if (id == 400)
+            else if (id == 404)
             {
                 modelErro.Mensagem = "A página que está procurando não existe! <br />Em caso de dúvidas entre em contato com nosso suporte.";
                 modelErro.Titulo = "Ops! Página não encontrada";

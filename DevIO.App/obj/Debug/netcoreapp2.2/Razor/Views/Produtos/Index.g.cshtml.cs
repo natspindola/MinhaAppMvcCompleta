@@ -19,12 +19,12 @@ using DevIO.App;
 #line default
 #line hidden
 #line 2 "C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\Views\_ViewImports.cshtml"
-using DevIO.App.Models;
+using DevIO.App.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e64f8e0968283ae1413fd151a2f322f06db80c4a", @"/Views/Produtos/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9b1c4f7112a188c6823fcdfc8cbeb3cfe4ebb5b7", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bb39f9860e515af571e7ece4ad1b1307c76ba95b", @"/Views/_ViewImports.cshtml")]
     public class Views_Produtos_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<DevIO.App.ViewModels.ProdutoViewModel>>
     {
         private global::AspNetCore.Views_Produtos_Index.__Generated__SummaryViewComponentTagHelper __SummaryViewComponentTagHelper;
@@ -77,7 +77,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h1>\r\n<hr />\r\n\r\n");
             EndContext();
             BeginContext(155, 25, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:summary", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e64f8e0968283ae1413fd151a2f322f06db80c4a5084", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:summary", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e64f8e0968283ae1413fd151a2f322f06db80c4a5088", async() => {
             }
             );
             __SummaryViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Produtos_Index.__Generated__SummaryViewComponentTagHelper>();
@@ -94,7 +94,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(193, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e64f8e0968283ae1413fd151a2f322f06db80c4a6138", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e64f8e0968283ae1413fd151a2f322f06db80c4a6142", async() => {
                 BeginContext(237, 12, true);
                 WriteLiteral("Novo Produto");
                 EndContext();
@@ -117,7 +117,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n</p>\r\n");
             EndContext();
             BeginContext(261, 33, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e64f8e0968283ae1413fd151a2f322f06db80c4a7605", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e64f8e0968283ae1413fd151a2f322f06db80c4a7609", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -19,12 +19,12 @@ using DevIO.App;
 #line default
 #line hidden
 #line 2 "C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\DevIO.App\Views\_ViewImports.cshtml"
-using DevIO.App.Models;
+using DevIO.App.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0065416048524114219d11cc125aba793dd7e25c", @"/Views/Produtos/_ListaProdutos.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9b1c4f7112a188c6823fcdfc8cbeb3cfe4ebb5b7", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bb39f9860e515af571e7ece4ad1b1307c76ba95b", @"/Views/_ViewImports.cshtml")]
     public class Views_Produtos__ListaProdutos : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<DevIO.App.ViewModels.ProdutoViewModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("width: 70px; height: 100px"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -111,7 +111,7 @@ using DevIO.App.Models;
             WriteLiteral("            <tr>\r\n                <th>\r\n                    ");
             EndContext();
             BeginContext(749, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0065416048524114219d11cc125aba793dd7e25c8365", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0065416048524114219d11cc125aba793dd7e25c8369", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -184,7 +184,7 @@ AddHtmlAttributeValue("", 788, item.Imagem, 788, 12, false);
             WriteLiteral("\r\n                </td>\r\n                <td class=\"text-right\">\r\n                    ");
             EndContext();
             BeginContext(1347, 133, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0065416048524114219d11cc125aba793dd7e25c12324", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0065416048524114219d11cc125aba793dd7e25c12328", async() => {
                 BeginContext(1442, 34, true);
                 WriteLiteral("<spam class=\"fa fa-search\"></spam>");
                 EndContext();
@@ -222,7 +222,7 @@ AddHtmlAttributeValue("", 788, item.Imagem, 788, 12, false);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1502, 137, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0065416048524114219d11cc125aba793dd7e25c15060", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0065416048524114219d11cc125aba793dd7e25c15064", async() => {
                 BeginContext(1597, 38, true);
                 WriteLiteral("<spam class=\"fa fa-pencil-alt\"></spam>");
                 EndContext();
@@ -260,7 +260,7 @@ AddHtmlAttributeValue("", 788, item.Imagem, 788, 12, false);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1661, 133, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0065416048524114219d11cc125aba793dd7e25c17800", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0065416048524114219d11cc125aba793dd7e25c17804", async() => {
                 BeginContext(1757, 33, true);
                 WriteLiteral("<spam class=\"fa fa-trash\"></spam>");
                 EndContext();
