@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Routing;
 using System;
 
 namespace DevIO.App.Extensions
@@ -67,6 +68,34 @@ namespace DevIO.App.Extensions
             output.Attributes.RemoveAll(name: "href");
             output.Attributes.Add(new TagHelperAttribute(name: "style", value: "cursor: not-allowed"));
             output.Attributes.Add(new TagHelperAttribute(name: "title", value: "Você não tem permissão."));
+        }
+    }
+
+    [HtmlTargetElement("*", Attributes = "supress-by-action")]
+    public class ApagaElementoByActionTagHelper : TagHelper
+    {
+        private readonly IHttpContextAccessor _contextAcessor;
+
+        public ApagaElementoByActionTagHelper(IHttpContextAccessor contextAccessor)
+        {
+            _contextAcessor = contextAccessor;
+        }
+
+        [HtmlAttributeName("supress-by-action")]
+        public string ActionName { get; set; }
+
+        public override void Process(TagHelperContext context, TagHelperOutput output)
+        {
+            if (context == null)
+                throw new ArgumentNullException(paramName: nameof(context));
+            if (output == null)
+                throw new ArgumentNullException(paramName: nameof(output));
+
+            var action = _contextAcessor.HttpContext.GetRouteData().Values["action"].ToString();
+
+            if (ActionName.Contains(action)) return;
+
+            output.SuppressOutput();
         }
     }
 }
