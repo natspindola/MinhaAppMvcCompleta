@@ -1,0 +1,14 @@
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.deps.json
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.runtimeconfig.json
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.runtimeconfig.dev.json
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.dll
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.pdb
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Business.dll
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Business.pdb
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.csprojAssemblyReference.cache
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.csproj.CoreCompileInputs.cache
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.AssemblyInfoInputs.cache
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.AssemblyInfo.cs
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.dll
+C:\dev\Desenvolvedor.IO\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.pdb
