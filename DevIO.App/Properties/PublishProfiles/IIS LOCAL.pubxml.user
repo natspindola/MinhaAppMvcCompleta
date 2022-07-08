@@ -7,11 +7,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword />
-    <History>False|2022-07-08T21:10:55.8589943Z;False|2022-07-08T18:07:37.7516785-03:00;</History>
+    <History>True|2022-07-08T22:55:55.3770339Z;True|2022-07-08T19:26:40.6243659-03:00;True|2022-07-08T19:25:27.6418012-03:00;True|2022-07-08T19:23:55.5990837-03:00;True|2022-07-08T19:12:23.9707315-03:00;False|2022-07-08T19:10:57.7540140-03:00;True|2022-07-08T19:10:02.6071017-03:00;False|2022-07-08T18:58:49.2344342-03:00;False|2022-07-08T18:40:21.4352039-03:00;False|2022-07-08T18:30:47.1242607-03:00;False|2022-07-08T18:14:57.6833295-03:00;False|2022-07-08T18:10:55.8589943-03:00;False|2022-07-08T18:07:37.7516785-03:00;</History>
   </PropertyGroup>
-  <ItemGroup>
-    <DestinationConnectionStrings Include="DefaultConnection">
-      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=MinhaAppMvcCompleta%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
-    </DestinationConnectionStrings>
-  </ItemGroup>
 </Project>
